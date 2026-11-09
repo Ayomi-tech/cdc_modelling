@@ -1,0 +1,40 @@
+sources:
+  - name: facebook
+    database: bronze_production
+    description: "raw data from Facebook Platform (static)"
+    schema: cdc_staging
+    config:
+      enabled: true
+      #event_time: my_time_field
+      meta: 
+        owner: "@Ayo"
+      freshness:
+        warn_after:
+          count: 2
+          period: day
+
+    tables:
+      - name: campaign
+        description: "campaign data from Facebook Platform (static)"
+        config:
+          enabled: true
+          event_time: campaign_updated_at
+        
+      - name: adgroup
+        description: "adgroup data from Facebook Platform (static)"
+        config:
+          enabled: true
+          event_time: ad_group_updated_at
+
+      - name: ads
+        description: "ads data from Facebook Platform (static)"
+        config:
+          enabled: true
+          event_time: ad_updated_at
+
+      - name: account
+        description: "account data from Facebook Platform (static)"
+        config:
+          enabled: true
+          event_time: account_updated_at
+    
