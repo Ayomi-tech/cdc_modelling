@@ -1,5 +1,5 @@
 WITH source_data AS (
-    SELECT * FROM {{ source('facebook_ads', 'adgroups') }}
+    SELECT * FROM {{ source('facebook_ads', 'adgroup') }}
 ),
 
 formatted AS (

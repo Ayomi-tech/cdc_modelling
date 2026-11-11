@@ -1,27 +1,28 @@
-version:2
+version: 2
 
 models:
-  -name: stg_facebook_ads_ad_history
-    description: "Facebook platform account model."
+  - name: stg_facebook_ads_account_history
+    description: Facebook platform account model.
+
     data_tests:
-      - dbt_utils_unique_combination_of_columns:
-          combination_of_columns:
-            - account_id
-            - account_updated_at
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - account_id
+              - account_updated_at
+
     columns:
       - name: account_id
-        description: "The unique identifier for the Facebook Ads account."
+        description: The unique identifier for the Facebook Ads account.
 
       - name: account_name
-        description: "The name of the Facebook Ads account."
+        description: The name of the Facebook Ads account.
 
       - name: ad_currency_code
-        description: "The currency code used for the Facebook Ads account."
+        description: The currency code used for the Facebook Ads account.
 
       - name: account_created_at
-        description: "The timestamp when the Facebook Ads account was created."
-        
-      - name: account_updated_at
-        description: "The timestamp when the Facebook Ads account was last updated."
+        description: The timestamp when the Facebook Ads account was created.
 
-  
+      - name: account_updated_at
+        description: The timestamp when the Facebook Ads account was last updated.
