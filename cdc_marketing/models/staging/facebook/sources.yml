@@ -1,5 +1,5 @@
 sources:
-  - name: facebook
+  - name: facebook_ads
     database: bronze_production
     description: "raw data from Facebook Platform (static)"
     schema: cdc_staging
