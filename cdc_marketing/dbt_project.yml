@@ -36,9 +36,9 @@ models:
       +catalog: bronze_production
       +schema: staging
 
-    intermidiate:
+    intermediate:
       +materialized: table
-      +catalog: marketing_silver_production
+      +catalog: silver_production
       +schema: preparation
 
     marts:

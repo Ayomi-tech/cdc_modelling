@@ -9,4 +9,5 @@ profiles.yml
 .env.*
 !.env.template
 .DS_Store
-
+.python-version
+edr_target/
