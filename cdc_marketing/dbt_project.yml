@@ -45,3 +45,7 @@ models:
       +materialized: table
       +catalog: marketing_gold_production
       +schema: marketing_spend
+
+  elementary:
+    +schema: elementary
+  

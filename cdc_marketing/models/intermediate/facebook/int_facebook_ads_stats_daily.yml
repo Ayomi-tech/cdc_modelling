@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_facebook_ads_stats_daily
+    description: Intermediate model for Facebook Ads Stats Daily
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - ad_id
+            - ad_id
+            - ad_date
