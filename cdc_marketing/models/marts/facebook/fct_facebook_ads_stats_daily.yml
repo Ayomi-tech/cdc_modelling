@@ -13,3 +13,19 @@ models:
     #  contract:
     #    enforced: true
     
+    columns:
+      - name: ad_id
+        description: "The unique identifier for the ad."
+        tests:
+          - not_null
+          - unique
+      - name: ad_date
+        description: "The date of the ad stats."
+        tests:
+          - not_null
+      - name: impressions
+        description: "The number of times the ad was shown."
+      - name: clicks
+        description: "The number of times the ad was clicked."
+      - name: spend
+        description: "The amount spent on the ad."    

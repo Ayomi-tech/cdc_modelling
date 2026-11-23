@@ -8,6 +8,7 @@ logs/
 profiles.yml
 .env.*
 !.env.template
-.DS_Store
+../.DS_Store
 .python-version
 edr_target/
+.DS_Store

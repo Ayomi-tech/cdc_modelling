@@ -3,6 +3,10 @@ version: 2
 models:
   - name: int_facebook_ads_details
     description: Facebook ad details
+    #config:
+    #  contract:
+    #    enforced: true
+    
     columns:
       - name: ad_id
         data_tests:
