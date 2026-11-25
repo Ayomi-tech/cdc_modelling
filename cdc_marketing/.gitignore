@@ -7,7 +7,7 @@ logs/
 .user.yml
 profiles.yml
 .env.*
-!.env.template
+.env.template
 ../.DS_Store
 .python-version
 edr_target/

@@ -5,7 +5,7 @@ sources:
     schema: cdc_staging
     config:
       enabled: true
-      #event_time: my_time_field
+
       meta: 
         owner: "@Ayo"
       freshness:
