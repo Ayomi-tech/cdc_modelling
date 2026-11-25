@@ -37,4 +37,10 @@ sources:
         config:
           enabled: true
           event_time: account_updated_at
+      
+      - name: ads_stats
+        description: ads stats on spend, clicks and impressions from Facebook Platform (static)
+        config:
+          enabled: true
+          event_time: ad_date
     
